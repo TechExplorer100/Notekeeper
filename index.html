@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteKeeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NoteKeeper</h1>
+
+        <!-- Note Form -->
+        <div id="note-form">
+            <input type="text" id="note-title" placeholder="Note Title">
+            <textarea id="note-description" placeholder="Note Description"></textarea>
+            <button onclick="saveNote()">Save Note</button>
+        </div>
+
+        <!-- Notes Container -->
+        <div id="notes-container"></div>
+
+        <!-- Lock Modal -->
+        <div id="lock-modal" class="modal">
+            <div class="modal-content">
+                <input type="password" id="lock-password" placeholder="Enter password to access">
+                <button onclick="submitPassword()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
